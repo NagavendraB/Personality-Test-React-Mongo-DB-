@@ -32,7 +32,7 @@ it('`QuestionOption` exist and be a component', () => expect(QuestionOption).toB
 
 it('should load test questions', async () => {
   const result = await getUserQuestions('/test/questions');
-  expect(result).toBeDefined();
+  expect(result.data.questions).toBeDefined();
 });
 
 it('`Next Question` should trigger on click event when user clicks on it', () => {
