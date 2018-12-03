@@ -1,4 +1,4 @@
-# Personality Test
+# Personality Test (React + Mongo DB)
 
 ### Description
 
