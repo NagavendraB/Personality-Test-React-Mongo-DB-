@@ -1,0 +1,184 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-header {
+  background-color: grey;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid;
+  overflow: hidden;
+  min-height: 250px;
+}
+
+@media (min-width: 769px) {
+  .container {
+    margin: 2.5rem auto;
+  }
+}
+
+/* Result Component */
+.result {
+  padding: 1.5rem 2.5rem;
+}
+
+/* PersonalityTest Component */
+.answer-options {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* QuestionCount Component */
+.question-count {
+  padding: 1.5rem 2.5rem 0;
+  font-size: 14px;
+}
+
+/* Question Component */
+.question {
+  margin: 0;
+  padding: 0.5rem 2.5rem 1.5rem 2.5rem;
+}
+
+/* AnswerOption Component */
+.answer-option {
+  border-top: 1px solid #eee;
+  list-style: none;
+}
+
+.answer-option:hover {
+  background-color: #eefbfe;
+}
+
+.radio-custom-button {
+  position: absolute;
+  width: auto;
+  opacity: 0;
+}
+
+.radio-custom-button,
+.radio-custom-label {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.radio-custom-label {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 1.5rem 2.5rem 1.5rem 5rem;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.radio-custom-button ~ .radio-custom-label:before {
+  position: absolute;
+  top: 20px;
+  left: 38px;
+  width: 28px;
+  height: 28px;
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  background: #fff;
+  border: 1px solid #bbb;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.radio-custom-button:checked ~ .radio-custom-label:before {
+  content: '';
+  background-size: 27px;
+  border-color: black;
+  background: green
+}
+
+/* Animation */
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out 0.3s;
+}
+
+.fade-leave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 1;
+}
+
+.fade-leave.fade-leave-active {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-appear {
+  opacity: 0;
+}
+
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.next-question {
+  float: right;
+  overflow: hidden;
+  padding: 10px;
+  border: 1px solid grey;
+  margin: 15px;
+  background: lightgray;
+  cursor: pointer;
+}
+
+/* Result */
+.result-text {
+  margin-bottom: 40px;
+}
+
+.question-body {
+  font-style: italic;
+}
+
+.next-question-disabled {
+  cursor: not-allowed;
+  background: #f3f1f1;
+  color: lightgrey;
+  border-color: white;
+}
+
+.multipl-options h4 {
+  padding-left: 5%;
+}
+
+div.rangeslider {
+  width: 550px;
+  margin-left: 10%;
+}
+
+.conditional-question .question {
+  font-size: 16px;
+  font-style: italic;
+  color: grey;
+}
