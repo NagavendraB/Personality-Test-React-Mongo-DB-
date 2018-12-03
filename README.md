@@ -11,10 +11,10 @@ It will allows a user to answer questions for a personality test based on the da
 - Once we run the application, web view will look like as below.
 
 ###### Starting screen:
-![Phase 1](src/docs/PersonalityTest1.PNG)
+![Phase 1](docs/PersonalityTest1.PNG)
 
 ###### Screen with user answers:
-![Phase 2](src/docs/PersonalityTest2.PNG)
+![Phase 2](docs/PersonalityTest2.PNG)
 
 ### Get it running
 
