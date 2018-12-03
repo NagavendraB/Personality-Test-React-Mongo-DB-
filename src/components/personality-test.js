@@ -16,7 +16,8 @@ class PersonalityTest extends Component {
   onAnswerSelected = (event) => {
     const {questionType} = this.props;
     const {currentTarget: {value}} = event;
-
+    
+    //TODO: Need to change the way of checking for conditional question with user current answer
     if (questionType.type === "single_choice_conditional") {
       const {questionType: {condition:{predicate}}} = this.props;
       this.setState({showConditionalQuestion: predicate.exactEquals[1] === value});
